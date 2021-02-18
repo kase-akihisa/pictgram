@@ -5,7 +5,6 @@ class User < ApplicationRecord
    validates :password, presence: true,
             format: { with: VALID_PASSWORD_REGEX,
              message: "は半角8~32文字アルファベット・数字それぞれ１文字以上含む必要があります"}
-  validates :texts, presence: true
   
   has_secure_password
   
